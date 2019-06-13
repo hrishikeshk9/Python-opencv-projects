@@ -8,9 +8,8 @@ import cv2
 import numpy as np
 
 
-face_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_frontalface_alt2.xml')
+face_cascade = cv2.CascadeClassifier('../cascades/data/haarcascade_frontalface_alt2.xml')
 cap = cv2.VideoCapture(0)
-
 while(True):
     ret, frame = cap.read()
     gray  = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
